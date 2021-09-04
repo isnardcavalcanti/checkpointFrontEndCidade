@@ -1,38 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;700&display=swap");
 
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background: url("../imgs/caboclo.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+header {
+  background-color: black;
+  width: 100%;
+  height: 50px;
+}
+.title-header {
+  color: white;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  text-align: left;
+  padding: 10px;
+  position: relative;
+  bottom: 10px;
+}
+.menu-header {
+  position: relative;
+  bottom: 60px;
+  left: 87%;
+  padding: 10px;
+  height: 50px;
+  cursor: pointer;
+  display: inline-block;
 }
 
-body img{
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(#000000, #9198e5);
-    background: linear-gradient(rgba(255, 255, 255, 0.158), rgba(0, 0, 0, 0.6));
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: -1;
+.box-paragraph {
+  background-color: white;
+  border-radius: 30px;
+  margin: 20px;
+  width: 150vh;
+  height: 10vh;
+}
+.first-paragraph {
+  position: relative;
+  top: 8px;
+  padding: 0px 0px 15px 30px;
+  text-align: left;
+}
+iframe {
+  margin: 10px;
 }
 
-.title-header{
-    padding-top: 10px;
-    text-align: center;
-    color: white;
-    font-family: 'IBM plex Sans Arabic', sans-serif;
-    font-size: 40px;
+section {
+  padding: 10px;
 }
 
-div p{
-    margin: 20px;
-    background-color: beige;
-    border-radius: 20px;
-    text-align: content;
-    font-size: 16px;
+h2,
+li {
+  color: white;
 }
-footer{
-    width: 100%;
-    background-color: black;
+i {
+  position: relative;
+  left: 95.5%;
+}
+.fa-youtube-play {
+  position: relative;
+  left: 96%;
 }
