@@ -7,32 +7,35 @@
 }
 body {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: url("../imgs/caboclo.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "main";
 }
-header {
+body header {
   background-color: black;
-  width: 100%;
+  top: 0;
   height: 50px;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  flex-wrap: wrap;
 }
 .title-header {
   color: white;
   font-family: "IBM Plex Sans Arabic", sans-serif;
-  text-align: left;
-  padding: 10px;
-  position: relative;
-  bottom: 10px;
+  align-items: center;
 }
 .menu-header {
-  position: relative;
-  bottom: 60px;
-  left: 87%;
-  padding: 10px;
-  height: 50px;
-  cursor: pointer;
-  display: inline-block;
+}
+.main-menu {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  list-style-type: none;
 }
 
 .box-paragraph {
@@ -67,4 +70,10 @@ i {
 .fa-youtube-play {
   position: relative;
   left: 96%;
+}
+@media (max-width: 480px) {
+  /* Smartphone */
+  iframe {
+    width: 480px;
+  }
 }
